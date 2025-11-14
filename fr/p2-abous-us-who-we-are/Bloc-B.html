@@ -1,0 +1,100 @@
+<!-- BLOC G – Rejoindre notre collectif d’experts (fond bleu, formulaire pliable) -->
+<section class="sbt-block sbt-join" style="background:#031034; padding:100px 0;">
+  <div class="sbt-container" style="max-width:1000px; margin:0 auto; padding:0 24px; text-align:center; color:#FFFFFF;">
+
+    <!-- Titre -->
+    <h2 class="sbt-title" style="
+      font-family:'Playfair Display',serif;
+      font-size:36px; color:#FFFFFF; margin-bottom:20px;
+    ">
+      Rejoindre notre collectif d’experts
+    </h2>
+
+    <!-- Sous-titre -->
+    <p class="sbt-intro" style="
+      font-size:20px; color:#D9D9D9; font-weight:400; margin-bottom:40px; line-height:1.6;
+    ">
+      Vous êtes expert du <strong style="color:#45D1FF;">leadership</strong>, du 
+      <strong style="color:#45D1FF;">coaching</strong>, du 
+      <strong style="color:#45D1FF;">sport</strong>, du 
+      <strong style="color:#45D1FF;">divertissement</strong> ou du 
+      <strong style="color:#45D1FF;">développement humain</strong> ?  
+      Notre collectif s’élargit progressivement, avec <strong>exigence</strong> et <strong>bienveillance</strong>.
+    </p>
+
+    <!-- Texte principal -->
+    <p class="sbt-body" style="
+      font-size:17px; line-height:1.8; color:#D9D9D9; max-width:800px; margin:0 auto 40px;
+    ">
+      Rejoindre <strong style="color:#45D1FF;">SBT Executive</strong>, c’est contribuer à une mission : 
+      <em>faire réussir l’humain, là où il est essentiel</em>.  
+      Nous réunissons des personnalités expertes, engagées et complémentaires — 
+      <strong>anciens dirigeants</strong>, <strong>DRH</strong>, 
+      <strong>psychologues du sport</strong>, <strong>chasseurs de tête</strong>, 
+      <strong>coach·s certifiés</strong> ou <strong>chercheurs</strong>.  
+      Tous partagent une vision du leadership où <strong>l’humain est au centre</strong> 
+      et une forte connaissance de nos secteurs.  
+      <br><br>
+      <strong>SBT Executive</strong> grandit pas à pas. Nous restons à l’écoute de nouveaux talents 
+      pour renforcer notre collectif, en <strong>France</strong> et à l’<strong>international</strong>.  
+      Si vous souhaitez contribuer à notre mission, <strong>présentez-nous votre profil</strong>.
+    </p>
+
+    <!-- Bouton pour afficher/masquer le formulaire -->
+    <button id="toggleFormBtn" style="
+      background-color:#45D1FF; color:#031034; font-weight:600;
+      padding:14px 36px; border:none; border-radius:50px; cursor:pointer;
+      transition:.3s; font-size:16px;
+    " onmouseover="this.style.background='#FFFFFF';" onmouseout="this.style.background='#45D1FF';">
+      Envoyer ma candidature
+    </button>
+
+    <!-- Formulaire caché -->
+    <div id="applyForm" style="display:none; margin-top:50px;">
+      <form action="/submit-expert-candidature" method="post" enctype="multipart/form-data" id="apply-expert" style="
+        background:#FFFFFF; border-radius:16px; box-shadow:0 12px 30px rgba(0,0,0,.25);
+        padding:40px; text-align:left; max-width:700px; margin:0 auto;
+      ">
+        <label style="color:#031034;">Nom / Name*</label><br>
+        <input type="text" name="name" required style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"><br>
+
+        <label style="color:#031034;">Email*</label><br>
+        <input type="email" name="email" required style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"><br>
+
+        <label style="color:#031034;">Fonction actuelle / Current Role</label><br>
+        <input type="text" name="role" style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"><br>
+
+        <label style="color:#031034;">Pays / Country</label><br>
+        <input type="text" name="country" style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"><br>
+
+        <label style="color:#031034;">Expertises principales / Main Areas of Expertise</label><br>
+        <textarea name="expertise" rows="4" style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"></textarea><br>
+
+        <label style="color:#031034;">Message libre / Your message</label><br>
+        <textarea name="message" rows="5" style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"></textarea><br>
+
+        <label style="color:#031034;">CV (PDF, max 5MB)</label><br>
+        <input type="file" name="cv" accept=".pdf" style="margin:8px 0 24px;"><br>
+
+        <button type="submit" style="
+          display:inline-block; background:#45D1FF; color:#031034; font-weight:600;
+          padding:12px 32px; border:none; border-radius:36px; cursor:pointer; transition:.3s;
+        " onmouseover="this.style.background='#FFFFFF'; this.style.color='#031034';"
+           onmouseout="this.style.background='#45D1FF'; this.style.color='#031034';">
+          Envoyer
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Script JS léger -->
+  <script>
+    document.getElementById('toggleFormBtn').addEventListener('click', function() {
+      const form = document.getElementById('applyForm');
+      const isVisible = form.style.display === 'block';
+      form.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'Envoyer ma candidature' : 'Fermer le formulaire';
+    });
+  </script>
+</section>

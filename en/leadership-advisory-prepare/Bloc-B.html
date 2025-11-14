@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SBT Executive | Succession & Future Leadership – PREPARE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Preparing today's leaders for tomorrow through the F.U.T.U.R.E. framework and the 4 PREPARE solutions — Succession Planning, 100-Day Coaching, AI & Future Leadership, M&A Continuity." />
+  <meta property="og:title" content="SBT Executive | Succession & Future Leadership – PREPARE" />
+  <meta property="og:description" content="Anticipate, prepare and secure leadership transitions with the F.U.T.U.R.E. methodology." />
+  <meta property="og:image" content="https://i.imgur.com/pr40sJH.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --blue-deep:#031034;
+      --blue-dark:#061338;
+      --blue-light:#6AE2FF;
+      --brand:#45D1FF;
+      --grey-050:#FBFCFE;
+      --grey-100:#F7F8FA;
+      --grey-200:#EDEFF3;
+      --ink:#2B2F3A;
+      --body:#434A57;
+      --radius:16px;
+      --shadow:0 10px 28px rgba(3,16,52,.12);
+      --max:1120px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--body);font-size:19px;line-height:1.8;background:#fff}
+    h1,h2,h3{font-family:"Playfair Display",serif;color:var(--blue-deep);margin:0 0 14px}
+    h1{font-size:54px;line-height:1.12}
+    h2{font-size:42px;line-height:1.22}
+    h3{font-size:24px;line-height:1.35}
+    p{margin:0 0 14px}
+    a{text-decoration:none}
+    strong{color:var(--blue-deep)}
+    .container{max-width:var(--max);margin:0 auto;padding:0 24px}
+    section{padding:80px 0}
+    .section-grey{background:var(--grey-100)}
+    .section-dark{background:linear-gradient(118deg,#061338,#031034);color:#EDEFF3}
+    .center{text-align:center}
+    .grid{display:grid;gap:24px}
+    @media(min-width:760px){.grid-2{grid-template-columns:1fr 1fr}}
+    .card{background:#fff;border-radius:14px;box-shadow:var(--shadow);padding:24px;transition:.25s}
+    .card:hover{transform:translateY(-3px)}
+    .btn{display:inline-block;padding:14px 32px;border-radius:40px;font-weight:600;font-size:16px;transition:.3s;cursor:pointer}
+    .btn-primary{background:linear-gradient(135deg,var(--brand),var(--blue-light));color:var(--blue-deep)}
+    .title-wrap{text-align:center;margin-bottom:16px}
+    .title-underline{width:140px;height:3px;background:linear-gradient(90deg,var(--brand),transparent);margin:12px auto;border-radius:2px}
+    .muted{color:#6a7286;font-size:16px}
+
+    .hero{position:relative;min-height:78vh;display:flex;align-items:center;overflow:hidden}
+    .hero__bg{position:absolute;inset:-5%;background:url('https://i.imgur.com/pr40sJH.jpeg') center/cover no-repeat;filter:brightness(.85)}
+    .hero::after{
+      content:"";position:absolute;inset:0;
+      background:radial-gradient(50% 60% at 50% 40%, rgba(69,209,255,.25) 0%, rgba(6,19,56,.9) 55%, rgba(3,16,52,.95) 100%);
+      pointer-events:none;
+    }
+    .hero .inner{position:relative;z-index:2;text-align:center;padding:120px 0}
+    .hero h1{color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.25)}
+    .hero h1 span{color:var(--blue-light)}
+    .hero p{color:#EDEFF3;font-size:20px;max-width:880px;margin:0 auto 26px;text-shadow:0 1px 8px rgba(0,0,0,.25)}
+
+    .pain-grid{display:grid;gap:20px;margin-top:30px}
+    @media(min-width:760px){.pain-grid{grid-template-columns:repeat(3,1fr)}}
+    .pain-card{background:#fff;border-left:4px solid #ff8080;padding:20px;border-radius:12px}
+    .pain-card h3{font-size:20px;color:var(--blue-dark)}
+
+    .future-section{background:var(--grey-050);padding:100px 0}
+    .future-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:22px;align-items:stretch;margin-top:40px}
+    @media(max-width:1024px){.future-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:600px){.future-grid{grid-template-columns:1fr}}
+    .future-pill{
+      background:#fff;
+      border:2px solid var(--brand);
+      border-radius:20px;
+      padding:32px 16px;
+      box-shadow:var(--shadow);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      transition:.6s ease;
+      opacity:0;transform:translateY(40px);
+    }
+    .future-pill.visible{opacity:1;transform:translateY(0)}
+    .future-letter{font-size:42px;font-weight:700;color:var(--blue-dark);margin-bottom:8px}
+    .future-title{font-weight:600;color:var(--brand);font-size:18px;margin-bottom:6px}
+    .future-text{font-size:15px;color:var(--body);line-height:1.5;max-width:180px;margin:0 auto}
+
+    .quote-band{
+      background:radial-gradient(circle at center,#061338 0%,#031034 100%);
+      color:#fff;
+      text-align:center;
+      padding:80px 20px;
+      font-size:26px;
+      font-style:italic;
+      letter-spacing:0.5px;
+      box-shadow:inset 0 0 40px rgba(69,209,255,0.15);
+      position:relative;
+    }
+    .quote-band span{color:var(--blue-light)}
+    .quote-band.fadein{opacity:0;transform:translateY(40px);transition:1.2s ease}
+    .quote-band.visible{opacity:1;transform:translateY(0)}
+
+    .solution{border:2px solid var(--brand);border-radius:16px;padding:24px;text-align:left}
+    .solution h3{color:var(--brand);margin-bottom:6px}
+
+    .benefit-card{border:2px solid var(--brand);background:#fff;border-radius:14px;padding:18px;box-shadow:var(--shadow);text-align:left;transition:.25s}
+    .benefit-card:hover{transform:translateY(-3px)}
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero__bg"></div>
+  <div class="container inner">
+    <h1><span>Succession & Future Leadership</span><br>Preparing today’s leaders for tomorrow</h1>
+    <p>Every leadership transition is a decisive moment.  
+      We help organizations <span style="color:#6AE2FF">anticipate</span>, <span style="color:#6AE2FF">prepare</span> and <span style="color:#6AE2FF">secure</span> these critical shifts — turning succession into continuity, not disruption.</p>
+    <a class="btn btn-primary" href="https://calendly.com/clenest-sbt">Schedule a confidential discussion</a>
+  </div>
+</header>
+
+<section>
+  <div class="container center">
+    <div class="title-wrap">
+      <h2>Why now?</h2>
+      <div class="title-underline"></div>
+    </div>
+    <p style="max-width:900px;margin:0 auto">In a world of accelerating technological change, evolving governance, and growing M&A activity, leadership continuity has become a critical issue.  
+      Anticipating transitions means ensuring long-term stability and performance.</p>
+  </div>
+</section>
+
+<section class="section-grey">
+  <div class="container">
+    <div class="title-wrap center">
+      <h2>The challenges faced by organizations</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="pain-grid">
+      <div class="pain-card">🧩 <h3>Unplanned transitions</h3><p>Sudden departures or poorly managed successions weaken governance.</p></div>
+      <div class="pain-card">🤖 <h3>Lack of AI readiness</h3><p>Skills gaps between current leaders and emerging technological challenges.</p></div>
+      <div class="pain-card">🔄 <h3>Complex M&A integrations</h3><p>Cultural clashes and talent losses during post-merger integration phases.</p></div>
+      <div class="pain-card">💬 <h3>Intergenerational leadership tensions</h3><p>Difficulty aligning different management styles and generational values.</p></div>
+      <div class="pain-card">⏳ <h3>No clear succession plan</h3><p>Critical roles not identified or secured over the medium term.</p></div>
+      <div class="pain-card">⚖️ <h3>Strategic inconsistency</h3><p>Leadership changes leading to loss of vision and continuity.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="future-section">
+  <div class="container center">
+    <div class="title-wrap">
+      <h2>The F.U.T.U.R.E. Framework</h2>
+      <div class="title-underline"></div>
+    </div>
+    <p style="max-width:940px;margin:0 auto 40px">A strategic and human framework to manage transitions, structure succession, and integrate new skills (AI, sustainability, inclusion).</p>
+
+    <div class="future-grid">
+      <div class="future-pill"><div class="future-letter">F</div><div class="future-title">Fidelity</div><div class="future-text">Ensuring trust and continuity in governance.</div></div>
+      <div class="future-pill"><div class="future-letter">U</div><div class="future-title">Unity</div><div class="future-text">Fostering cohesion and fluid transitions between leaders.</div></div>
+      <div class="future-pill"><div class="future-letter">T</div><div class="future-title">Transmission</div><div class="future-text">Preserving and passing on human and cultural capital.</div></div>
+      <div class="future-pill"><div class="future-letter">U</div><div class="future-title">Upskilling</div><div class="future-text">Developing future-ready and AI-augmented leadership capabilities.</div></div>
+      <div class="future-pill"><div class="future-letter">R</div><div class="future-title">Renewal</div><div class="future-text">Preparing emerging talents and regenerating teams.</div></div>
+      <div class="future-pill"><div class="future-letter">E</div><div class="future-title">Envision</div><div class="future-text">Anticipating transformations and turning vision into action.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="quote-band fadein">
+  <p>“<span>The future of leadership</span> is not predicted — it is prepared.”</p>
+</div>
+
+<section class="section-grey">
+  <div class="container center">
+    <div class="title-wrap">
+      <h2>Our 4 PREPARE Levers</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="grid grid-2" style="margin-top:26px">
+      <div class="card solution">
+        <h3>🧭 Succession Planning</h3>
+        <p><strong>Objective:</strong> Design robust succession plans to ensure leadership continuity.</p>
+        <p><strong>Our approach:</strong> Identification of critical roles, talent mapping, successor readiness and integrated succession pathways.</p>
+      </div>
+      <div class="card solution">
+        <h3>🚀 100-Day Succession Coaching</h3>
+        <p><strong>Objective:</strong> Provide tailored coaching to help successors make immediate impact.</p>
+        <p><strong>Our approach:</strong> 100-day onboarding coaching, alignment rituals, priority management and sustained legitimacy building.</p>
+      </div>
+      <div class="card solution">
+        <h3>🤖 AI & Future Leadership</h3>
+        <p><strong>Objective:</strong> Equip leaders to master AI and prepare the next generation of leadership.</p>
+        <p><strong>Our approach:</strong> AI maturity diagnostics, strategic use cases, data governance, and AI & human skills upskilling.</p>
+      </div>
+      <div class="card solution">
+        <h3>🔄 Leadership Continuity in M&A</h3>
+        <p><strong>Objective:</strong> Ensure resilient leadership through transaction and transformation phases.</p>
+        <p><strong>Our approach:</strong> Human capital continuity plan, post-merger leadership bridge, cultural alignment and human risk mitigation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container center">
+    <div class="title-wrap">
+      <h2>Tangible benefits of the PREPARE pillar</h2>
+      <div class="title-underline"></div>
+    </div>
+    <div class="grid grid-2" style="margin-top:26px">
+      <div class="benefit-card">💠 <strong>Strategic continuity:</strong> planned transitions, sustainable alignment.</div>
+      <div class="benefit-card">🤝 <strong>Preserved human capital:</strong> loyalty, trust and engagement.</div>
+      <div class="benefit-card">📈 <strong>Enduring performance:</strong> operational leaders from day one.</div>
+      <div class="benefit-card">🤖 <strong>AI readiness:</strong> enhanced decision-making and future-proof leadership.</div>
+      <div class="benefit-card">🔒 <strong>Reduced human risk:</strong> clarity, security and organizational stability.</div>
+      <div class="benefit-card">🌱 <strong>Cultural renewal:</strong> seamless balance between legacy and innovation.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container center">
+    <div class="title-wrap">
+      <h2 style="color:#45D1FF">Key Team — Succession & Future Leadership</h2>
+      <div class="title-underline" style="background:linear-gradient(90deg,#45D1FF,transparent)"></div>
+    </div>
+    <div class="grid grid-2" style="gap:24px;max-width:900px;margin:22px auto 0">
+      <div class="card" style="background:#fff;color:#2B2F3A;text-align:left">
+        <h3 style="color:#45D1FF">Laurent Riffaut</h3>
+        <p><strong>Partner</strong><br>Former international HRD (Blackstone, Disney, Michael Kors).  
+        Specializes in M&A and succession contexts to secure leadership continuity.</p>
+      </div>
+      <div class="card" style="background:#fff;color:#2B2F3A;text-align:left">
+        <h3 style="color:#45D1FF">Jean-Baptiste Durand</h3>
+        <p><strong>Senior Partner</strong><br>Expert in transformation at the crossroads of leadership and technology.  
+        Leads the “AI & Future Leadership” pillar, supporting organizations through digital disruption.</p>
+      </div>
+    </div>
+    <div class="grid" style="max-width:900px;margin:14px auto 0">
+      <div class="card" style="background:#fff;color:#2B2F3A;text-align:left">
+        <h3 style="color:#45D1FF">Cédric Le Nest</h3>
+        <p><strong>Managing Partner</strong><br>Founder of SBT Executive.  
+        Oversees client relations and assembles expert teams tailored to each leadership challenge for a bespoke, human approach.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-grey center">
+  <div class="container">
+    <h2>Anticipate. Prepare. Secure.</h2>
+    <p style="max-width:800px;margin:0 auto 22px">Turn your transitions into a competitive advantage.  
+      Activate F.U.T.U.R.E. and our PREPARE solutions to ensure leadership continuity with confidence.</p>
+    <a class="btn btn-primary" href="https://calendly.com/clenest-sbt">Schedule a confidential discussion</a>
+  </div>
+</section>
+
+<footer style="background:#031034;color:#EDEFF3;text-align:center;padding:36px 0">
+  <div class="container">
+    <p>SBT Executive © 2025 — All rights reserved • <a href="/privacy-policy" style="color:#45D1FF">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){ entry.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.future-pill, .card, .quote-band').forEach(el => observer.observe(el));
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!-- BLOC G – Join our collective of experts (English version) -->
+<section class="sbt-block sbt-join" style="background:#031034; padding:100px 0;">
+  <div class="sbt-container" style="max-width:1000px; margin:0 auto; padding:0 24px; text-align:center; color:#FFFFFF;">
+
+    <!-- Title -->
+    <h2 class="sbt-title" style="
+      font-family:'Playfair Display',serif;
+      font-size:36px; color:#FFFFFF; margin-bottom:20px;
+    ">
+      Join our collective of experts
+    </h2>
+
+    <!-- Subtitle -->
+    <p class="sbt-intro" style="
+      font-size:20px; color:#D9D9D9; font-weight:400; margin-bottom:40px; line-height:1.6;
+    ">
+      Are you an expert in <strong style="color:#45D1FF;">leadership</strong>, 
+      <strong style="color:#45D1FF;">coaching</strong>, 
+      <strong style="color:#45D1FF;">sports</strong>, 
+      <strong style="color:#45D1FF;">entertainment</strong> or 
+      <strong style="color:#45D1FF;">human development</strong>?  
+      Our collective is growing, guided by both <strong>high standards</strong> and <strong>human care</strong>.
+    </p>
+
+    <!-- Body text -->
+    <p class="sbt-body" style="
+      font-size:17px; line-height:1.8; color:#D9D9D9; max-width:800px; margin:0 auto 40px;
+    ">
+      Joining <strong style="color:#45D1FF;">SBT Executive</strong> means contributing to one mission:  
+      <em>enabling human success where it truly matters</em>.  
+      We bring together committed and complementary professionals — 
+      <strong>former executives</strong>, <strong>HR leaders</strong>, 
+      <strong>sports psychologists</strong>, <strong>headhunters</strong>, 
+      <strong>certified coaches</strong> and <strong>researchers</strong>.  
+      All share a vision of leadership that places <strong>people at the center</strong>, 
+      backed by deep knowledge of our industries.  
+      <br><br>
+      <strong>SBT Executive</strong> is growing step by step. We remain open to meeting new experts, 
+      in <strong>France</strong> and internationally.  
+      If you want to contribute to our mission, <strong>introduce yourself below</strong>.
+    </p>
+
+    <!-- Button to show/hide form -->
+    <button id="toggleFormBtnEN" style="
+      background-color:#45D1FF; color:#031034; font-weight:600;
+      padding:14px 36px; border:none; border-radius:50px; cursor:pointer;
+      transition:.3s; font-size:16px;
+    " onmouseover="this.style.background='#FFFFFF';" onmouseout="this.style.background='#45D1FF';">
+      Submit my application
+    </button>
+
+    <!-- Hidden form -->
+    <div id="applyFormEN" style="display:none; margin-top:50px;">
+      <form action="/submit-expert-candidature" method="post" enctype="multipart/form-data" id="apply-expert" style="
+        background:#FFFFFF; border-radius:16px; box-shadow:0 12px 30px rgba(0,0,0,.25);
+        padding:40px; text-align:left; max-width:700px; margin:0 auto;
+      ">
+        <label style="color:#031034;">Name*</label><br>
+        <input type="text" name="name" required style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"><br>
+
+        <label style="color:#031034;">Email*</label><br>
+        <input type="email" name="email" required style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"><br>
+
+        <label style="color:#031034;">Current Role</label><br>
+        <input type="text" name="role" style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"><br>
+
+        <label style="color:#031034;">Country</label><br>
+        <input type="text" name="country" style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"><br>
+
+        <label style="color:#031034;">Main Areas of Expertise</label><br>
+        <textarea name="expertise" rows="4" style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"></textarea><br>
+
+        <label style="color:#031034;">Your message</label><br>
+        <textarea name="message" rows="5" style="width:100%; padding:12px; margin:8px 0 16px; border:1px solid #D9D9D9; border-radius:8px;"></textarea><br>
+
+        <label style="color:#031034;">CV (PDF, max 5MB)</label><br>
+        <input type="file" name="cv" accept=".pdf" style="margin:8px 0 24px;"><br>
+
+        <button type="submit" style="
+          display:inline-block; background:#45D1FF; color:#031034; font-weight:600;
+          padding:12px 32px; border:none; border-radius:36px; cursor:pointer; transition:.3s;
+        " onmouseover="this.style.background='#FFFFFF'; this.style.color='#031034';"
+           onmouseout="this.style.background='#45D1FF'; this.style.color='#031034';">
+          Send
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Light JS script -->
+  <script>
+    document.getElementById('toggleFormBtnEN').addEventListener('click', function() {
+      const form = document.getElementById('applyFormEN');
+      const isVisible = form.style.display === 'block';
+      form.style.display = isVisible ? 'none' : 'block';
+      this.textContent = isVisible ? 'Submit my application' : 'Close form';
+    });
+  </script>
+</section>

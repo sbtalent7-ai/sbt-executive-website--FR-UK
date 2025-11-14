@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc G – Strategic Onboarding | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; 
+  --cyan:#45D1FF; 
+  --light:#F5F7FA; 
+  --dark:#2E3345;
+  --white:#FFFFFF; 
+  --pale-blue:#f3f6fb; /* 🎨 Fond bleu très pâle */
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--pale-blue); /* ✅ Fond bleu pâle */
+}
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--pale-blue); /* ✅ Fond bleu pâle */
+}
+.onboarding-card{
+  background:var(--white); /* ✅ Carte blanche */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.25);
+  flex-direction:row; /* ✅ Image à gauche */
+}
+.onboarding-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+  position:relative;
+}
+.onboarding-right{
+  flex:1 1 45%;
+  background:var(--light);
+}
+.onboarding-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s ease;
+}
+.onboarding-right img:hover{
+  transform:scale(1.03); /* ✨ Zoom léger au survol */
+}
+.onboarding-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+.onboarding-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  text-transform:none;
+  letter-spacing:.3px;
+  margin:0 0 24px;
+}
+.opening-line{
+  font-size:16px;
+  font-weight:700;
+  color:var(--cyan);
+  margin-bottom:10px;
+  text-transform:none; /* Minuscules sauf première lettre */
+}
+.onboarding-left p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+  margin:0 0 16px;
+}
+.onboarding-left strong{color:var(--navy);}
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+.expand{
+  display:none;
+  margin-top:20px;
+}
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+.expand p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+}
+.cta{
+  margin-top:32px;
+  text-align:center;
+}
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+@media(max-width:960px){
+  .onboarding-card{
+    flex-direction:column;
+  }
+  .onboarding-left,.onboarding-right{
+    flex:100%;
+    padding:30px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+
+<div class="onboarding-card">
+
+  <!-- ✅ Colonne image (à gauche) -->
+  <div class="onboarding-right">
+    <img src="https://i.imgur.com/htgk5vc.jpeg" alt="Strategic Onboarding – SBT Executive">
+  </div>
+
+  <!-- ✅ Colonne texte -->
+  <div class="onboarding-left">
+    <h1>Strategic Onboarding</h1>
+    <p class="opening-line">Enfin, nous accompagnons les leaders dans leurs 100 premiers jours pour transformer l’essai.</p>
+    <h2>Accompagner la réussite dès les 100 premiers jours</h2>
+
+    <p><strong>Accompagner les premiers mois d’un leader</strong> est essentiel pour maximiser sa prise de poste, aligner les attentes et sécuriser sa réussite.</p>
+
+    <p>L’intégration d’un nouveau leader est une <strong>phase stratégique</strong> : près de 40 % des échecs de recrutement se jouent dans les 100 premiers jours.  
+    Chez <strong>SBT Executive</strong>, nous avons conçu un accompagnement sur mesure pour sécuriser cette période décisive.  
+    Notre approche permet d’aligner le leader, ses équipes et ses enjeux dès les premières semaines, garantissant une <strong>prise de poste fluide, efficace et durable</strong>.</p>
+
+    <p>Ce programme vient conclure notre <strong>approche intégrée du recrutement stratégique</strong>, assurant la continuité entre sélection, évaluation et accompagnement.</p>
+
+    <button class="toggle" data-target="#onboarding-expand">En savoir plus</button>
+
+    <div class="expand" id="onboarding-expand">
+
+      <h3>💡 Problématiques clients</h3>
+      <ul>
+        <li>Comment accélérer la courbe d’apprentissage d’un nouveau leader ?</li>
+        <li>Comment éviter les incompréhensions culturelles ou les décalages d’attentes ?</li>
+        <li>Comment sécuriser la performance dès les premiers mois ?</li>
+      </ul>
+
+      <h3>🧭 Notre méthodologie</h3>
+      <ul>
+        <li><strong>Programme structuré sur 100 jours</strong>, conçu selon les besoins spécifiques du leader et de l’organisation.</li>
+        <li><strong>8 à 10 sessions individuelles</strong> animées par un coach senior expérimenté.</li>
+        <li><strong>Diagnostic initial</strong> et cadrage des enjeux stratégiques, de la culture et des relations clés.</li>
+        <li><strong>Alignement des parties prenantes</strong> (manager, RH, équipe) pour une transition fluide.</li>
+        <li><strong>Suivi progressif</strong> avec ajustements selon les retours terrain et les priorités du poste.</li>
+      </ul>
+
+      <h3>✨ Bénéfices pour le client</h3>
+      <ul>
+        <li><strong>Accélération tangible</strong> de la prise de poste et du leadership effectif.</li>
+        <li><strong>Meilleure collaboration</strong> et intégration au sein de l’équipe et de l’organisation.</li>
+        <li><strong>Réduction des risques d’échec</strong>, de démotivation ou de désalignement.</li>
+        <li><strong>Clarté, confiance et performance durable</strong> dès les premières semaines.</li>
+      </ul>
+
+      <h3>👥 Équipe clé</h3>
+      <ul>
+        <li><strong>Antoine Leygonie</strong> — Senior Partner, expert international du développement du leadership et de la performance managériale.</li>
+        <li><strong>Kris Perquy</strong> — Senior Advisor, psychologue du sport et du travail, spécialiste de la transition et de la résilience des dirigeants.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange confidentiel</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#onboarding-expand">▲ Réduire</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle'); if(!btn) return;
+  const sel=btn.getAttribute('data-target'); if(!sel) return;
+  const panel=document.querySelector(sel); if(!panel) return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc G – M&A & Leadership Continuity | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#061338;
+  --cyan:#45D1FF;
+  --light:#F5F7FA; /* Bleu pâle */
+  --dark:#2E3345;
+  --white:#FFFFFF;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--light); /* ✔ Fond bleu pâle */
+}
+
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--light);
+}
+
+.diagnostic-card{
+  background:var(--white); /* ✔ Carte blanche */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.15);
+}
+
+/* IMAGE À GAUCHE */
+.diagnostic-right{
+  flex:1 1 45%;
+  background:var(--white);
+}
+.diagnostic-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* TEXTE À DROITE */
+.diagnostic-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+}
+
+.diagnostic-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+
+.diagnostic-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  margin:0 0 24px;
+}
+
+.diagnostic-left p{
+  font-size:15px;
+  line-height:1.8;
+  margin:0 0 16px;
+}
+
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+
+.expand{
+  display:none;
+  margin-top:20px;
+}
+
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+
+.cta{
+  text-align:center;
+  margin-top:32px;
+}
+
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+
+@media(max-width:960px){
+  .diagnostic-card{flex-direction:column;}
+  .diagnostic-left, .diagnostic-right{flex:100%;padding:30px;}
+  .diagnostic-right img{height:260px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="section-wrapper">
+<div class="diagnostic-card">
+
+  <!-- IMAGE GAUCHE -->
+  <div class="diagnostic-right">
+    <img src="https://i.imgur.com/0DiYvWt.png" alt="M&A & Leadership Continuity – SBT Executive">
+  </div>
+
+  <!-- TEXTE DROITE -->
+  <div class="diagnostic-left">
+    <h1>M&A & Leadership Continuity</h1>
+    <h2>Sécuriser le capital humain dans les transitions stratégiques</h2>
+
+    <p><strong>Chaque opération de fusion, d’acquisition ou de cession met à l’épreuve la solidité du capital humain.</strong></p>
+    <p>Nous accompagnons dirigeants et investisseurs pour évaluer, protéger et mobiliser les talents clés, en faisant de l’humain un levier de stabilité, de confiance et de création de valeur.  
+    Les opérations de M&A sont avant tout des moments humains de vérité : derrière les chiffres, c’est la capacité des équipes à collaborer, s’adapter et incarner une vision commune qui détermine la réussite réelle du deal.</p>
+
+    <button class="toggle" data-target="#ma-expand">En savoir plus</button>
+
+    <div class="expand" id="ma-expand">
+
+      <h3>💡 Problématiques clés</h3>
+      <ul>
+        <li>Départ ou démotivation de talents clés pendant ou après la transaction.</li>
+        <li>Manque de visibilité sur les forces en présence et les dynamiques de pouvoir.</li>
+        <li>Difficulté à structurer une nouvelle équipe dirigeante cohérente et mobilisée.</li>
+        <li>Sous-évaluation des risques humains dans les audits préalables.</li>
+      </ul>
+
+      <h3>🧭 Notre approche</h3>
+      <p>Nous faisons du facteur humain un pilier central de la réussite des opérations de M&A à travers quatre étapes clés :</p>
+      <ul>
+        <li><strong>1️⃣ Human Capital Due Diligence</strong> — évaluation approfondie des équipes, du leadership et des risques de continuité.</li>
+        <li><strong>2️⃣ Leadership Mapping & Stratégie de rétention</strong> — identification des rôles critiques et mise en place de plans de fidélisation et de sécurisation.</li>
+        <li><strong>3️⃣ Integration Design & Coaching</strong> — accompagnement du collectif dirigeant pour aligner rôles, culture et gouvernance.</li>
+        <li><strong>4️⃣ Post-Deal Monitoring</strong> — suivi des dynamiques humaines et maintien de la cohésion dans la durée.</li>
+      </ul>
+
+      <h3>✨ Bénéfices</h3>
+      <ul>
+        <li>Lecture claire du capital humain et de ses leviers de performance.</li>
+        <li>Continuité du leadership sécurisée dès les premières semaines.</li>
+        <li>Équipes alignées, stables et orientées valeur.</li>
+        <li>Réduction tangible des risques humains et réputationnels.</li>
+        <li>Intégration culturelle fluide et facteur humain valorisé dans le deal.</li>
+      </ul>
+
+      <h3>👥 Équipe clé</h3>
+      <ul>
+        <li><strong>Laurent Riffault</strong> — Senior Partner, expert en gouvernance et transformation RH, spécialiste de la continuité du leadership dans les contextes de transaction et de changement stratégique.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="https://calendly.com/clenest-sbt" target="_blank">🤝 Planifier un échange confidentiel</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#ma-expand">▲ Fermer</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

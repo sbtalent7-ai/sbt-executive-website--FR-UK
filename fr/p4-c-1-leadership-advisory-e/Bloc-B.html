@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc G – Global Rewards & Performance Management | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338;
+  --cyan:#45D1FF;
+  --light:#F5F7FA;
+  --dark:#2E3345;
+  --white:#FFFFFF;
+  --pale-blue:#f3f6fb; /* 🎨 Fond bleu très pâle */
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--navy);
+}
+.section-wrapper{
+  padding:50px 0 40px;
+  background:var(--pale-blue); /* ✅ fond bleu pâle */
+}
+.diagnostic-card{
+  background:var(--white); /* ✅ carte blanche */
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  flex-direction:row-reverse; /* ✅ image à gauche */
+  box-shadow:0 6px 24px rgba(6,19,56,0.25);
+}
+.diagnostic-left{
+  flex:1 1 55%;
+  padding:40px 50px 50px;
+}
+.diagnostic-right{
+  flex:1 1 45%;
+  background:var(--light);
+}
+.diagnostic-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s ease;
+}
+.diagnostic-right img:hover{
+  transform:scale(1.03);
+}
+.diagnostic-left h1{
+  font-size:32px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+.diagnostic-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  text-transform:none;
+  margin:0 0 24px;
+}
+.diagnostic-left p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+  margin:0 0 16px;
+}
+.diagnostic-left strong{color:var(--navy);}
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 20px;
+  margin-top:16px;
+  cursor:pointer;
+  transition:.2s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+.expand{
+  display:none;
+  margin-top:20px;
+}
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  text-transform:uppercase;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+.cta{
+  text-align:center;
+  margin-top:32px;
+}
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+@media(max-width:960px){
+  .diagnostic-card{flex-direction:column;}
+  .diagnostic-left,.diagnostic-right{flex:100%;padding:30px;}
+}
+</style>
+</head>
+<body>
+
+<div class="section-wrapper">
+<div class="diagnostic-card">
+
+  <!-- Colonne image -->
+  <div class="diagnostic-right">
+    <img src="https://i.imgur.com/Fb52Lbw.jpeg" alt="Global Rewards & Performance Management – SBT Executive">
+  </div>
+
+  <!-- Colonne texte -->
+  <div class="diagnostic-left">
+    <h1>Global Rewards & Performance Management</h1>
+    <h2>Reconnaissance, performance et leadership durable</h2>
+
+    <p><strong>Faire de la reconnaissance un moteur de performance et de leadership durable.</strong></p>
+    <p>Nous concevons des modèles intégrés qui relient sens, impact et engagement à long terme.</p>
+
+    <p>Chez <strong>SBT Executive</strong>, nous faisons de la reconnaissance un levier stratégique du leadership et de la performance durable.  
+    La reconnaissance n’est pas qu’une question de rémunération : elle traduit la valeur réelle d’un engagement, d’une contribution et d’un comportement alignés sur la vision de l’entreprise.</p>
+
+    <button class="toggle" data-target="#rewards-expand">En savoir plus</button>
+
+    <div class="expand" id="rewards-expand">
+
+      <h3>💡 Problématiques clés</h3>
+      <ul>
+        <li>Comment valoriser les leaders et les équipes au-delà du résultat chiffré ?</li>
+        <li>Comment instaurer une reconnaissance qui renforce à la fois la coopération et la responsabilité ?</li>
+        <li>Comment faire évoluer les pratiques d’évaluation vers des modèles plus inclusifs, cohérents et inspirants ?</li>
+      </ul>
+
+      <h3>🧭 Notre approche</h3>
+      <ul>
+        <li><strong>1️⃣ Diagnostic culturel et systémique</strong> — lecture approfondie des pratiques actuelles de performance, de feedback et de reconnaissance.</li>
+        <li><strong>2️⃣ Design d’un modèle de performance intégré</strong> — équilibrant résultats, comportements et leadership incarné.</li>
+        <li><strong>3️⃣ Définition de leviers de reconnaissance innovants</strong> — associant reconnaissance financière, symbolique et expérientielle.</li>
+        <li><strong>4️⃣ Accompagnement à la transformation</strong> — formation des dirigeants, communication interne et pilotage du changement pour ancrer une culture de la performance éclairée.</li>
+      </ul>
+
+      <h3>✨ Bénéfices pour le client</h3>
+      <ul>
+        <li>Des leaders alignés, motivés et porteurs d’une performance durable.</li>
+        <li>Une culture de reconnaissance qui stimule la coopération et la confiance.</li>
+        <li>Des pratiques RH modernisées, cohérentes avec la stratégie et les valeurs.</li>
+        <li>Un leadership responsabilisé et attractif pour les talents clés.</li>
+        <li>Une organisation plus cohésive et inspirée par le sens collectif.</li>
+      </ul>
+
+      <h3>👥 Équipe clé</h3>
+      <ul>
+        <li><strong>Laurent Riffault</strong> — Leading Partner, expert en politiques RH et transformation des modèles de performance.</li>
+      </ul>
+
+      <div class="cta">
+        <a href="/our-services/leadership-advisory/engage/global-rewards" target="_blank">📘 Explorer notre approche de la performance</a>
+      </div>
+
+      <div class="cta">
+        <a href="/contact" target="_blank">🤝 Planifier un échange avec un expert</a>
+      </div>
+
+      <div class="close-row" style="text-align:center;margin-top:20px;">
+        <button class="toggle" data-target="#rewards-expand">▲ Fermer</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

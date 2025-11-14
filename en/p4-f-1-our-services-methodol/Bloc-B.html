@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloc – F.U.T.U.R.E. | SBT Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061338; --cyan:#45D1FF; --dark:#2E3345; --white:#FFFFFF;
+  --greycard:#E9EBEF;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Lato',sans-serif;
+  color:var(--dark);
+  background:var(--white);
+}
+.section-wrapper{
+  padding:60px 0 60px;
+  background:var(--white);
+}
+.diagnostic-card{
+  background:var(--greycard);
+  border-radius:18px;
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  flex-wrap:wrap;
+  overflow:hidden;
+  box-shadow:0 6px 24px rgba(6,19,56,0.08);
+}
+.diagnostic-left{
+  flex:1 1 55%;
+  padding:50px 60px 60px;
+}
+.diagnostic-right{
+  flex:1 1 45%;
+  background:var(--white);
+}
+.diagnostic-right img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+.diagnostic-left h1{
+  font-size:34px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 12px;
+}
+.diagnostic-left h2{
+  font-size:18px;
+  font-weight:800;
+  color:var(--cyan);
+  margin:0 0 28px;
+}
+.diagnostic-left p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--dark);
+  margin:0 0 16px;
+}
+.diagnostic-left strong{color:var(--navy);}
+
+.toggle{
+  background:none;
+  border:1.8px solid var(--cyan);
+  color:var(--cyan);
+  font-weight:800;
+  border-radius:8px;
+  padding:10px 22px;
+  margin-top:18px;
+  cursor:pointer;
+  transition:.25s;
+}
+.toggle:hover{
+  background:var(--cyan);
+  color:var(--navy);
+}
+
+.expand{
+  display:none;
+  margin-top:24px;
+}
+
+.expand h3{
+  color:var(--cyan);
+  font-weight:900;
+  font-size:15px;
+  margin:16px 0 10px;
+}
+.expand ul{
+  list-style:none;
+  padding:0;
+  margin:10px 0 20px;
+}
+.expand li::before{
+  content:"▸ ";
+  color:var(--cyan);
+  font-weight:900;
+}
+.expand li{
+  margin-bottom:6px;
+  line-height:1.6;
+}
+.expand .acronym strong{color:var(--cyan);}
+
+.cta{text-align:center;margin-top:32px;}
+.cta a{
+  display:inline-block;
+  background:var(--cyan);
+  color:var(--navy);
+  text-decoration:none;
+  padding:14px 36px;
+  border-radius:36px;
+  font-weight:800;
+  font-size:15px;
+  transition:.25s;
+}
+.cta a:hover{
+  background:var(--navy);
+  color:var(--white);
+}
+
+@media(max-width:960px){
+  .diagnostic-card{flex-direction:column;}
+  .diagnostic-left,.diagnostic-right{flex:100%;padding:30px;}
+  .diagnostic-right img{height:280px;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="section-wrapper">
+  <div class="diagnostic-card">
+
+    <!-- Left column (text) -->
+    <div class="diagnostic-left">
+      <h1>F.U.T.U.R.E.</h1>
+      <h2>Preparing Today’s Leaders for Tomorrow’s Challenges</h2>
+
+      <p><strong>F.U.T.U.R.E.</strong> is a forward-looking methodology designed to anticipate leadership transitions, secure organisational continuity, and prepare the next generation of executives.  
+      Developed by <strong>SBT Executive</strong>, it bridges strategy and human development to turn succession planning into a true driver of resilience and long-term growth.</p>
+
+      <p>In an environment shaped by volatility, technological disruption, and shifting governance models, leadership continuity has become a strategic imperative.  
+      F.U.T.U.R.E. provides a proactive and structured framework to anticipate, transmit, and renew leadership capabilities.</p>
+
+      <button class="toggle" data-target="#future-expand">Learn more</button>
+
+      <div class="expand" id="future-expand">
+        <h3>💡 The Six Pillars of F.U.T.U.R.E.</h3>
+
+        <div class="acronym">
+          <p>
+            <strong>F – Fidelity</strong>: safeguarding continuity and maintaining stakeholder trust.<br>
+            <strong>U – Unity</strong>: strengthening alignment and cohesion across leadership generations.<br>
+            <strong>T – Transmission</strong>: enabling smooth transitions and preserving organisational memory.<br>
+            <strong>U – Upskilling</strong>: developing emerging skills—AI, sustainability, inclusive leadership, and more.<br>
+            <strong>R – Renewal</strong>: identifying and preparing the leaders who will shape tomorrow.<br>
+            <strong>E – Envision</strong>: anticipating strategic and societal shifts to build long-term alignment.
+          </p>
+        </div>
+
+        <p>By connecting strategic vision and human capital, F.U.T.U.R.E. transforms talent management into a lever for continuity, cohesion, and innovation.  
+        It has been deployed with boards, investors, and executive teams navigating major transitions: acquisitions, succession plans, restructurings, or strategic pivots.</p>
+
+        <p>Through a combination of <strong>executive coaching</strong>, <strong>strategic foresight</strong>, and <strong>leadership planning</strong>,  
+        F.U.T.U.R.E. helps organisations prepare today the leaders who will shape tomorrow.</p>
+
+        <div class="cta">
+          <a href="/en/our-services/leadership-advisory/future" target="_blank">📘 Explore our Future Leadership & Succession solutions</a>
+        </div>
+
+        <div style="text-align:center;margin-top:20px;">
+          <button class="toggle" data-target="#future-expand">▲ Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column (image) -->
+    <div class="diagnostic-right">
+      <img src="https://i.imgur.com/SNtjdnh.png" alt="F.U.T.U.R.E. Methodology – SBT Executive">
+    </div>
+
+  </div>
+</div>
+
+<script>
+document.addEventListener('click',function(e){
+  const btn=e.target.closest('.toggle');if(!btn)return;
+  const sel=btn.getAttribute('data-target');if(!sel)return;
+  const panel=document.querySelector(sel);if(!panel)return;
+  const open=panel.style.display==='block';
+  panel.style.display=open?'none':'block';
+  if(!open){
+    const y=panel.getBoundingClientRect().top+window.scrollY-96;
+    window.scrollTo({top:y,behavior:'smooth'});
+  }
+});
+</script>
+
+</body>
+</html>

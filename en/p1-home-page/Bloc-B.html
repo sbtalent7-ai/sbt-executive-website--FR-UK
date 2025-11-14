@@ -1,0 +1,117 @@
+<!-- ✅ BLOCK Y+Z — NEWSLETTER + FOOTER — SBT EXECUTIVE (EN) -->
+
+<section class="sbt-newsletter" style="background-color:#061338; color:#ffffff; padding:100px 0 60px; font-family:'Lato',sans-serif; text-align:left;">
+  <div class="sbt-container" style="max-width:1100px; margin:0 auto; padding:0 20px;">
+
+    <h2 style="font-family:'Playfair Display',serif; font-size:32px; font-weight:700; color:#45D1FF; margin-bottom:15px;">
+      Stay informed
+    </h2>
+
+    <p style="font-size:17px; line-height:1.8; color:#e8e8e8; max-width:800px; margin-bottom:30px;">
+      Subscribe to our newsletter to receive insights, exclusive studies and thought leadership on executive search, leadership, and transformation in sport, entertainment and leisure.
+    </p>
+
+    <!-- 🧾 NEWSLETTER FORM -->
+    <form id="newsletter-form-en" style="background:#f4f4f4; border-radius:12px; padding:25px 30px; max-width:600px;">
+      <div style="display:flex; flex-wrap:wrap; gap:12px;">
+        <input type="text" id="nameNL" placeholder="Your name" required style="flex:1 1 45%; padding:14px; border:none; border-radius:8px;">
+        <input type="email" id="emailNL" placeholder="Your professional email" required style="flex:1 1 50%; padding:14px; border:none; border-radius:8px;">
+      </div>
+      <button type="submit" style="margin-top:20px; background:#45D1FF; color:#061338; font-weight:700; padding:14px 28px; border:none; border-radius:8px; cursor:pointer; transition:0.3s;">
+        Subscribe to the newsletter
+      </button>
+    </form>
+
+    <p id="newsletter-message-en" style="margin-top:20px; font-size:15px; color:#45D1FF; display:none;">
+      ✅ Thank you! You are now subscribed to our newsletter.
+    </p>
+
+  </div>
+</section>
+
+
+<footer class="sbt-footer" style="background-color:#061338; color:#ffffff; padding:80px 0 40px; font-family:'Lato',sans-serif;">
+  <div class="sbt-container" style="max-width:1200px; margin:0 auto; padding:0 20px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:40px;">
+
+    <div style="flex:1 1 55%; min-width:260px;">
+      <h3 style="font-family:'Playfair Display',serif; font-size:24px; font-weight:700; margin-bottom:15px; color:#45D1FF;">
+        SBT Executive
+      </h3>
+
+      <p style="font-size:16px; line-height:1.7; color:#d9d9d9; margin-bottom:25px;">
+        A boutique executive search and HR advisory firm dedicated to the worlds of <strong>sport</strong>, <strong>entertainment</strong> and <strong>leisure</strong>.
+      </p>
+
+      <p style="font-size:14px; color:#b5b5b5; margin-top:10px;">
+        © 2025 SBT Executive. All rights reserved.
+        <a href="#" id="privacy-link-en" style="color:#45D1FF; text-decoration:none;">Privacy Policy</a>.
+      </p>
+    </div>
+
+    <div style="flex:1 1 35%; min-width:220px;">
+      <h4 style="font-size:18px; color:#45D1FF; font-weight:600; margin-bottom:15px;">Contact us</h4>
+
+      <a href="https://calendly.com/clenest-sbt" target="_blank" style="display:inline-block; background:#45D1FF; color:#061338; font-weight:700; padding:12px 26px; border-radius:8px; text-decoration:none;">
+        Schedule a confidential conversation
+      </a>
+
+      <div style="margin-top:30px;">
+        <a href="https://fr.linkedin.com/company/sbtexecutive" target="_blank" style="display:inline-flex; align-items:center; gap:8px; text-decoration:none; color:#ffffff; font-weight:600; margin-bottom:10px;">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="22" height="22" style="filter:invert(1); opacity:0.9;">
+          LinkedIn Page
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="border-top:1px solid rgba(255,255,255,0.1); margin-top:60px; text-align:center; padding-top:25px; color:#a8a8a8; font-size:14px;">
+    Designed with integrity by <strong>SBT Executive</strong> | Paris
+  </div>
+</footer>
+
+
+<!-- ✅ GDPR POPUP -->
+<div id="privacy-modal-en" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:9999; justify-content:center; align-items:center;">
+  <div style="background:#ffffff; color:#031034; padding:40px; max-width:700px; border-radius:12px; position:relative;">
+
+    <button onclick="document.getElementById('privacy-modal-en').style.display='none'" style="position:absolute; top:12px; right:15px; background:none; border:none; font-size:20px; color:#031034; cursor:pointer;">
+      ✕
+    </button>
+
+    <h3 style="font-family:'Playfair Display',serif; font-size:24px; font-weight:700; color:#061338;">
+      Privacy Policy (GDPR)
+    </h3>
+
+    <p style="font-size:15px; line-height:1.8; margin-top:20px;">
+      SBT Executive is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR). Information collected through this site (newsletter, contact form, downloads) is used exclusively to keep you informed about our services and updates.
+    </p>
+
+    <p style="font-size:15px; line-height:1.8;">
+      You may request the deletion of your data or unsubscribe at any time by contacting us at
+      <a href="mailto:contact@sbtexecutive.com" style="color:#45D1FF; text-decoration:none;">contact@sbtexecutive.com</a>.
+      Your data is neither shared nor sold. Our servers are hosted within the European Union and comply with current security standards.
+    </p>
+
+    <button onclick="document.getElementById('privacy-modal-en').style.display='none'" style="margin-top:20px; background:#45D1FF; color:#061338; font-weight:700; padding:10px 20px; border:none; border-radius:8px; cursor:pointer;">
+      Close
+    </button>
+
+  </div>
+</div>
+
+
+<script>
+  // Newsletter
+  document.getElementById('newsletter-form-en').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('newsletter-message-en').style.display = 'block';
+    this.reset();
+  });
+
+  // GDPR Popup
+  document.getElementById('privacy-link-en').addEventListener('click', function(e){
+    e.preventDefault();
+    document.getElementById('privacy-modal-en').style.display = 'flex';
+  });
+</script>
